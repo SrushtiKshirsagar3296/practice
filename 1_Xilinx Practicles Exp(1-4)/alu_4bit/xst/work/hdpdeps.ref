@@ -1,0 +1,7 @@
+V3 3
+FL "D:/VLSI Practical/alu_4bit/alu_4bit.vhd" 2025/10/19.15:23:13 P.15xf
+EN work/alu_4bit 1760867600 FL "D:/VLSI Practical/alu_4bit/alu_4bit.vhd" \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/alu_4bit/Behavioral 1760867601 \
+      FL "D:/VLSI Practical/alu_4bit/alu_4bit.vhd" EN work/alu_4bit 1760867600

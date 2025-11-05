@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\VLSI Practical\alu_4bit\impact.xsl
+OUTFILE=D:\VLSI Practical\alu_4bit\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\VLSI Practical\alu_4bit
+LICENSE=iMPACT
+USER_INFO=iMPACT

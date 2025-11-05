@@ -1,0 +1,25 @@
+NET "clk" LOC = "p76";
+NET "display_en<0>"  LOC = "p117";
+NET "display_en <1>" LOC = "p119";
+NET "display_en <2>" LOC = "p115";
+NET "display_en <3>" LOC = "p116";
+NET "display_en <4>" LOC = "p114";
+NET "display_en <5>" LOC = "p113";
+
+NET "rl<3>"  LOC = "p189";
+NET "rl <2>" LOC = "p182";
+NET "rl <1>" LOC = "p183";
+NET "rl <0>" LOC = "p180";
+
+NET "segen_O<6>"  LOC = "p120";
+NET "segen_O <5>" LOC = "p124";
+NET "segen_O <4>" LOC = "p123";
+NET "segen_O <3>" LOC = "p126";
+NET "segen_O <2>" LOC = "p125";
+NET "segen_O <1>" LOC = "p130";
+NET "segen_O <0>" LOC = "p128";
+
+NET "sl<3>"  LOC = "p178";
+NET "sl <2>" LOC = "p184";
+NET "sl <1>" LOC = "p185";
+NET "sl <0>" LOC = "p187";

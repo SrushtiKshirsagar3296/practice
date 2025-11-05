@@ -1,0 +1,28 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> ERROR:Xst:2883 - Option "-power" is not available for the selected device family.
+ERROR:Xst:2883 - Option "-dsp_utilization_ratio" is not available for the selected device family.
+ERROR:Xst:2883 - Option "-lc" is not available for the selected device family.
+ERROR:Xst:2883 - Option "-reduce_control_sets" is not available for the selected device family.
+ERROR:Xst:1363 - Option "-shreg_min_size" is not available for command run.
+ERROR:Xst:2883 - Option "-use_dsp48" is not available for the selected device family.
+--> 
+
+Total memory usage is 212236 kilobytes
+
+Number of errors   :    6 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

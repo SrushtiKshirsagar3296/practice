@@ -1,0 +1,2 @@
+vhdl work "keypad_controller.vhd"
+vhdl work "test.vhd"

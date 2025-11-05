@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>On mouse over event/The focus Event </title>
+</head>
+
+<body style="text-align:center;" onmouseover="myFunc()">
+    <h1 style="color:green;">SITS E&TC</h1>
+    <h2 style="color:Blue;">
+        On mouse over event/The focus Event</h2>
+
+    <b>Enter your name:</b> <input type="text" onfocus="myFunction(this)">
+
+    <p>When the input field gets focus, a function changes the background-
+        color.</p>
+
+    <h1 id="SITS" style="color:green;"></h1>
+
+    <script>
+        let result = document.getElementById("SITS");
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+        function myFunc() {
+            changeColor('tomato');
+            result.innerHTML = "Background Color changed";
+
+        }
+        function myFunction(x) {
+            x.style.background = "yellow";
+        }
+    </script>
+</body>
+
+</html>

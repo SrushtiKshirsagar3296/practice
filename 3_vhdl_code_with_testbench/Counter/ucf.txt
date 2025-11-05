@@ -1,0 +1,5 @@
+NET "clk" LOC="p181";
+NET "count<0>" LOC="p80";
+NET "count<1>" LOC="p79";
+NET "count<2>" LOC="p78";
+NET "count<3>" LOC="p77";

@@ -1,0 +1,43 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity alu_4bit is
+    Port (
+        a, b    : in  STD_LOGIC_VECTOR(3 downto 0);
+        opcode  : in  STD_LOGIC_VECTOR(2 downto 0);
+        y       : out STD_LOGIC_VECTOR(4 downto 0)
+    );
+end alu_4bit;
+
+architecture Behavioral of alu_4bit is
+    signal as, bs, ys : UNSIGNED(4 downto 0);
+begin
+    as <= ('0' & UNSIGNED(a));
+    bs <= ('0' & UNSIGNED(b));
+
+    process(as, bs, opcode)
+    begin
+        case opcode is
+            when "000" =>  -- Addition
+                ys <= as + bs;
+            when "001" =>  -- Subtraction
+                ys <= as - bs;
+            when "010" =>  -- AND
+                ys <= as and bs;
+            when "011" =>  -- NAND
+                ys <= not (as and bs);
+            when "100" =>  -- XOR
+                ys <= as xor bs;
+            when "101" =>  -- XNOR
+                ys <= not (as xor bs);
+            when "110" =>  -- OR
+                ys <= as or bs;
+            when others =>  -- Pass-through A
+                ys <= as;
+        end case;
+    end process;
+
+    y <= STD_LOGIC_VECTOR(ys);
+
+end Behavioral;

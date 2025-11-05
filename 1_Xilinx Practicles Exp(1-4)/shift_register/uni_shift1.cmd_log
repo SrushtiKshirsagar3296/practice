@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Sysuser/Desktop/Practicles/shift_register/uni_shift1.xst" -ofn "C:/Users/Sysuser/Desktop/Practicles/shift_register/uni_shift1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 uni_shift1.ngc uni_shift1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uni_shift1.ucf -p xc3s400-pq208-4 uni_shift1.ngc uni_shift1.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o uni_shift1_map.ncd uni_shift1.ngd uni_shift1.pcf 
+par -w -intstyle ise -ol high -t 1 uni_shift1_map.ncd uni_shift1.ncd uni_shift1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml uni_shift1.twx uni_shift1.ncd -o uni_shift1.twr uni_shift1.pcf -ucf uni_shift1.ucf 
+bitgen -intstyle ise -f uni_shift1.ut uni_shift1.ncd 

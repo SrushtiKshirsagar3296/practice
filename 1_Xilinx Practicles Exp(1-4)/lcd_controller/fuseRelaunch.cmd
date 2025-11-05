@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Sysuser/Desktop/Practicles/lcd_controller/tb_LCD_CONTROLLER_isim_beh.exe" -prj "C:/Users/Sysuser/Desktop/Practicles/lcd_controller/tb_LCD_CONTROLLER_beh.prj" "work.tb_LCD_CONTROLLER" 

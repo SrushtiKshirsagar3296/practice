@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/VLSI Practical/alu_4bit/test_isim_beh.exe" -prj "D:/VLSI Practical/alu_4bit/test_beh.prj" "work.test" 

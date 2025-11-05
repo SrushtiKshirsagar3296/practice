@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Sysuser\Desktop\Practicles\shift_register\uni_shift1.ncd
+OUTFILE=C:\Users\Sysuser\Desktop\Practicles\shift_register\uni_shift1.bit
+FAMILY=Spartan3
+PART=xc3s400-4pq208
+WORKINGDIR=C:\Users\Sysuser\Desktop\Practicles\shift_register
+LICENSE=WebPack
+USER_INFO=__0_0_0

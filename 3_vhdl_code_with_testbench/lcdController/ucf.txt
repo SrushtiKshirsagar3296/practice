@@ -1,0 +1,12 @@
+NET "clk" LOC="p181";
+NET "d_out<0>"  LOC= "p167";
+NET "d_out<1>"  LOC= "p166";
+NET "d_out<2>"  LOC= "p165";
+NET "d_out<3>"  LOC= "p162";
+NET "d_out<4>"  LOC= "p161";
+NET "d_out<5>"  LOC= "p156";
+NET "d_out<6>"  LOC= "p155";
+NET "d_out<7>"  LOC= "p154";
+NET "en"  LOC="p168";
+NET "rs"  LOC="p171";
+NET "rw" LOC="p169";

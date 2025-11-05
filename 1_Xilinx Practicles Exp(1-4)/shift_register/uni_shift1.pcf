@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 01 09:30:44 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "temp_0" BEL "temp_1" BEL "temp_2" BEL "temp_3" BEL "so" BEL
+        "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

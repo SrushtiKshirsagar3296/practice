@@ -1,0 +1,9 @@
+V3 3
+FL C:/Users/Sysuser/Desktop/Practicles/lcd_controller/lcd_controller.vhd 2025/11/01.10:11:18 P.20131013
+EN work/LCD_CONTROLLER 1762017749 \
+      FL C:/Users/Sysuser/Desktop/Practicles/lcd_controller/lcd_controller.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/LCD_CONTROLLER/Behavioral 1762017750 \
+      FL C:/Users/Sysuser/Desktop/Practicles/lcd_controller/lcd_controller.vhd \
+      EN work/LCD_CONTROLLER 1762017749

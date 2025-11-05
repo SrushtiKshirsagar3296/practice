@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Sysuser/Desktop/Practicles/keypad_controller/tb_keypad1_isim_beh.exe" -prj "C:/Users/Sysuser/Desktop/Practicles/keypad_controller/tb_keypad1_beh.prj" "work.tb_keypad1" 

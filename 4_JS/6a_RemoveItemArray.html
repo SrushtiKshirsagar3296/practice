@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<Title>Array Program</title>
+
+<body>
+    <h3>program to remove item from an array</h3>
+    <script>
+        // program to remove item from an array
+        function removeItemFromArray(array, n) {
+            const index = array.indexOf(n);
+            // if the element is in the array, remove it
+            if (index > -1) {
+                // remove item
+                array.splice(index, 1);
+            } return array;
+        }
+        const myArray = ["BMW", "HUNDAI", "SUZUKI", "HONDA", "TATA"];
+        const result = removeItemFromArray(["BMW", "HUNDAI", "SUZUKI", "HONDA"
+            , "TATA"], "SUZUKI");
+        document.write("Original Array:" + myArray + "<br><br>");
+        document.write("Array After Removed Element:" + result);
+
+    </script>
+</body>
+
+</html>

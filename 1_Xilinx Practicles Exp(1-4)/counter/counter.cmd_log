@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Sysuser/Desktop/Practicles/counter/counter.xst" -ofn "C:/Users/Sysuser/Desktop/Practicles/counter/counter.syr" 

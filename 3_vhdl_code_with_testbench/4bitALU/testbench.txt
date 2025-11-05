@@ -1,0 +1,129 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+
+ENTITY alu4bitTest IS
+END alu4bitTest;
+
+ARCHITECTURE behavior OF alu4bitTest IS 
+
+    -- Component Declaration for the Unit Under Test (UUT)
+    COMPONENT alu_4bit
+    PORT(
+         a : IN  std_logic_vector(3 downto 0);
+         b : IN  std_logic_vector(3 downto 0);
+         opcode : IN  std_logic_vector(2 downto 0);
+         Y : OUT  std_logic_vector(4 downto 0)
+        );
+    END COMPONENT;
+
+   -- Inputs
+   signal a : std_logic_vector(3 downto 0) := (others => '0');
+   signal b : std_logic_vector(3 downto 0) := (others => '0');
+   signal opcode : std_logic_vector(2 downto 0) := (others => '0');
+
+   -- Outputs
+   signal Y : std_logic_vector(4 downto 0);
+   
+   -- Clock signal
+   signal clk : std_logic := '0';  -- Define clock with initial value '0'
+
+BEGIN
+
+    -- Instantiate the Unit Under Test (UUT)
+    uut: alu_4bit PORT MAP (
+          a => a,
+          b => b,
+          opcode => opcode,
+          Y => Y
+        );
+
+    -- Clock process definition
+    clk_process : process
+    begin
+        -- Generate clock with a period of 20 ns (50 MHz frequency)
+        clk <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+    end process;
+
+    -- Stimulus process
+    stim_proc: process
+    begin      
+        -- hold reset state for 100 ns.
+        wait for 100 ns;
+
+        -- Test Case 1: Addition (a + b)
+        a <= "0001"; -- 1
+        b <= "0010"; -- 2
+        opcode <= "000"; -- Add
+        wait for 10 ns;
+
+        -- Test Case 2: Subtraction (a - b)
+        a <= "0100"; -- 4
+        b <= "0011"; -- 3
+        opcode <= "001"; -- Subtract
+        wait for 10 ns;
+
+        -- Test Case 3: AND (a and b)
+        a <= "1100"; -- 12
+        b <= "1010"; -- 10
+        opcode <= "010"; -- AND
+        wait for 10 ns;
+
+        -- Test Case 4: NAND (not (a and b))
+        a <= "1100"; -- 12
+        b <= "1010"; -- 10
+        opcode <= "011"; -- NAND
+        wait for 10 ns;
+
+        -- Test Case 5: XOR (a xor b)
+        a <= "1111"; -- 15
+        b <= "1010"; -- 10
+        opcode <= "100"; -- XOR
+        wait for 10 ns;
+
+        -- Test Case 6: XNOR (not (a xor b))
+        a <= "1111"; -- 15
+        b <= "1010"; -- 10
+        opcode <= "101"; -- XNOR
+        wait for 10 ns;
+
+        -- Test Case 7: OR (a or b)
+        a <= "1100"; -- 12
+        b <= "1010"; -- 10
+        opcode <= "110"; -- OR
+        wait for 10 ns;
+
+        -- Test Case 8: Pass-through A
+        a <= "0110"; -- 6
+        b <= "1111"; -- 15
+        opcode <= "111"; -- Pass A through
+        wait for 10 ns;
+
+        -- Test Case 9: Different values for a and b
+        a <= "1110"; -- 14
+        b <= "1001"; -- 9
+        opcode <= "000"; -- Add
+        wait for 10 ns;
+
+        -- Test Case 10: Check edge cases for zero and negative (in the case of subtraction)
+        a <= "0000"; -- 0
+        b <= "0001"; -- 1
+        opcode <= "001"; -- Subtract
+        wait for 10 ns;
+
+        -- Test Case 11: Subtraction of a larger number from a smaller one (negative result)
+        a <= "0010"; -- 2
+        b <= "0111"; -- 7
+        opcode <= "001"; -- Subtract
+        wait for 10 ns;
+
+        wait;
+    end process;
+
+END;

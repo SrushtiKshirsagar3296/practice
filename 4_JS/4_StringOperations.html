@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String(mihir-58)</title>
+    <style>
+        h3 {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Example 1: Using toUpperCase()</h3>
+    <script>
+        // js program to perform string comparison
+        const string1 = 'JavaScript Program';
+        const string2 = 'javascript program';
+        // compare both strings
+        const result1 = string1.toUpperCase() === string2.toUpperCase();
+
+        if (result1) {
+
+            document.write('<b>Result1:</b>The strings are similar.');
+        } else {
+            document.write('<b>Result1:</b>The strings are not similar.');
+        }
+    </script>
+    <h3>Example 2: JS String Comparison Using RegEx</h3>
+    <script>
+        // program to perform string comparison
+        const string3 = 'JavaScript Program';
+        const string4 = 'javascript program';
+        // create regex
+        const pattern = new RegExp(string3, "gi");
+        // compare the stings
+        const result2 = pattern.test(string3)
+        if (result2) {
+            document.write('<b>Result2:</b>The strings are similar.');
+        } else {
+            document.write('<b>Result2:</b>The strings are not similar.');
+        }
+    </script>
+    <h3>Example 3: Using localeCompare()</h3>
+    <script>
+        const string5 = 'JavaScript Program';
+        const string6 = 'javascript program';
+        const result3 = string5.localeCompare(string2, undefined, { sensitivity: 'base' });
+        if (result3 == 0) {
+            document.write('<b>Result3:</b>The strings are similar.');
+        }
+        else {
+            document.write('<b>Result3:</b>The strings are not similar.');
+        }
+    </script>
+</body>
+
+</html>

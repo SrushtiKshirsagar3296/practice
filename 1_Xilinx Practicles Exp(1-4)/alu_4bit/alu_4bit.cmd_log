@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "alu_4bit.ngc" alu_4bit.ngd  
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu_4bit.ucf -p xc3s400-pq208-4 "alu_4bit.ngc" alu_4bit.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu_4bit.ucf -p xc3s400-pq208-4 "alu_4bit.ngc" alu_4bit.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o alu_4bit_map.ncd alu_4bit.ngd alu_4bit.pcf 
+par -w -intstyle ise -ol high -t 1 alu_4bit_map.ncd alu_4bit.ncd alu_4bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu_4bit.twx alu_4bit.ncd -o alu_4bit.twr alu_4bit.pcf -ucf alu_4bit.ucf 
+bitgen -intstyle ise -f alu_4bit.ut alu_4bit.ncd 
+xst -intstyle ise -ifn "D:/VLSI Practical/alu_4bit/alu_4bit.xst" -ofn "D:/VLSI Practical/alu_4bit/alu_4bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu_4bit.ucf -p xc3s400-pq208-4 "alu_4bit.ngc" alu_4bit.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o alu_4bit_map.ncd alu_4bit.ngd alu_4bit.pcf 
+par -w -intstyle ise -ol high -t 1 alu_4bit_map.ncd alu_4bit.ncd alu_4bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu_4bit.twx alu_4bit.ncd -o alu_4bit.twr alu_4bit.pcf -ucf alu_4bit.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu_4bit.ucf -p xc3s400-pq208-4 "alu_4bit.ngc" alu_4bit.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o alu_4bit_map.ncd alu_4bit.ngd alu_4bit.pcf 
+par -w -intstyle ise -ol high -t 1 alu_4bit_map.ncd alu_4bit.ncd alu_4bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu_4bit.twx alu_4bit.ncd -o alu_4bit.twr alu_4bit.pcf -ucf alu_4bit.ucf 
+bitgen -intstyle ise -f alu_4bit.ut alu_4bit.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu_4bit.ucf -p xc3s400-pq208-4 "alu_4bit.ngc" alu_4bit.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o alu_4bit_map.ncd alu_4bit.ngd alu_4bit.pcf 
+par -w -intstyle ise -ol high -t 1 alu_4bit_map.ncd alu_4bit.ncd alu_4bit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu_4bit.twx alu_4bit.ncd -o alu_4bit.twr alu_4bit.pcf -ucf alu_4bit.ucf 
+bitgen -intstyle ise -f alu_4bit.ut alu_4bit.ncd 

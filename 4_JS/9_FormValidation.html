@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form validation using HTML and JavaScript</title>
+    <style>
+        .button {
+            background-color: gray;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 600px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color:gray">
+        REGISTRATION FORM</h1>
+    <form id="form_submit" name="RegForm" OnSubmit="return
+StudentInfo()" method="post" action="" align="center">
+
+        <b>Name:</b><br /><br />
+        <input type="text" name="Name" size="50" required />
+
+        <br /><br />
+        <b>Mobile No:</b><br /><br />
+
+        <input type="text" name="Telephone" size="50" required />
+
+        <br /><br />
+
+        <b>E-mail Address:</b><br /><br />
+        <input type="text" name="EMail" size="50" required />
+
+        <br /><br /><br />
+        <input type="submit" value="Submit" name="Submit" class="button" id="submit" onclick='StudentInfo()' />
+        <input type="reset" value="Reset" name="Reset" class="button" />
+    </form>
+    <script>
+        function StudentInfo() {
+            var name =
+                document.forms.RegForm.Name.value;
+            var email =
+                document.forms.RegForm.EMail.value;
+
+            var phone =
+                document.forms.RegForm.Telephone.value;
+            //Javascript reGex for Email Validation.
+            var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+            // Javascript reGex for Phone Number validation.
+            var regPhone = /^\d{10}$/;
+            // Javascript reGex for Name validation
+            var regName = /\d+$/g;
+            if (name == "" || regName.test(name)) {
+                window.alert("Please enter your name properly.");
+                name.focus();
+                return false;
+            }
+            if (email == "" || !regEmail.test(email)) {
+                window.alert("Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+            if (phone == "" || !regPhone.test(phone)) {
+                alert("Please enter valid phone number.");
+                phone.focus();
+                return false;
+            }
+            alert('Congratulation and Welcome !!!!');
+            return true;
+        }
+
+    </script>
+</body>
+
+</html>

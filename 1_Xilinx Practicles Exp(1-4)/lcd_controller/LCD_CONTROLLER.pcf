@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 01 10:26:55 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk_lcd_151 = BEL "pr_state_15" BEL "clk_lcd_15" BEL "rs" BEL "en" BEL
+        "d_out_0" BEL "d_out_1" BEL "d_out_2" BEL "d_out_3" BEL "d_out_4" BEL
+        "d_out_5" BEL "ns_state_15" BEL "Mshreg_pr_state_0/SRL16E" BEL
+        "pr_state_0" BEL "Mshreg_pr_state_1/SRL16E" BEL "pr_state_1" BEL
+        "Mshreg_pr_state_2/SRL16E" BEL "pr_state_2" BEL
+        "Mshreg_pr_state_3/SRL16E" BEL "pr_state_3" BEL
+        "Mshreg_pr_state_4/SRL16E" BEL "pr_state_4" BEL
+        "Mshreg_pr_state_5/SRL16E" BEL "pr_state_5" BEL
+        "Mshreg_pr_state_6/SRL16E" BEL "pr_state_6" BEL
+        "Mshreg_pr_state_7/SRL16E" BEL "pr_state_7" BEL
+        "Mshreg_pr_state_8/SRL16E" BEL "pr_state_8" BEL
+        "Mshreg_pr_state_9/SRL16E" BEL "pr_state_9" BEL
+        "Mshreg_pr_state_10/SRL16E" BEL "pr_state_10" BEL
+        "Mshreg_pr_state_11/SRL16E" BEL "pr_state_11" BEL
+        "Mshreg_pr_state_12/SRL16E" BEL "pr_state_12" BEL
+        "Mshreg_pr_state_13/SRL16E" BEL "pr_state_13" BEL
+        "Mshreg_pr_state_14/SRL16E" BEL "pr_state_14" BEL
+        "clk_lcd_15_BUFG.GCLKMUX" BEL "clk_lcd_15_BUFG";
+TIMEGRP clk = BEL "clk_lcd_0" BEL "clk_lcd_1" BEL "clk_lcd_2" BEL "clk_lcd_3"
+        BEL "clk_lcd_4" BEL "clk_lcd_5" BEL "clk_lcd_6" BEL "clk_lcd_7" BEL
+        "clk_lcd_8" BEL "clk_lcd_9" BEL "clk_lcd_10" BEL "clk_lcd_11" BEL
+        "clk_lcd_12" BEL "clk_lcd_13" BEL "clk_lcd_14" BEL "clk_lcd_15" BEL
+        "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk_lcd_151 = PERIOD TIMEGRP "clk_lcd_151" 20 ns HIGH 50%;
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+
